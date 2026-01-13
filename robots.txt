@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://catchjobs.github.io/catch-new-landing/sitemap.xml
+Sitemap: https://catchjobs.github.io/sitemap.xml
