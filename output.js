@@ -219,7 +219,7 @@ var initLanguageSwitcher = () => {
   const loadSiteLanguages = async () => {
     var _a, _b;
     try {
-      const response = await fetch("./site.json", { cache: "no-store" });
+      const response = await fetch("/site.json", { cache: "no-store" });
       if (!response.ok) return null;
       const data = await response.json();
       return (_b = (_a = data == null ? void 0 : data.content) == null ? void 0 : _a.languages) != null ? _b : null;
