@@ -72,44 +72,59 @@ var initMobileMenu = () => {
 var initLanguageSwitcher = () => {
   const desktopLanguageDropdown = document.getElementById("languageDropdown");
   const desktopLanguageMenu = document.getElementById("desktopLanguageMenu");
-  const desktopLangOptions = document.querySelectorAll(".desktop-lang-option");
   const languageModalOverlay = document.getElementById("languageModalOverlay");
   const languageModalClose = document.getElementById("languageModalClose");
   const languageSaveButton = document.getElementById("languageSaveButton");
   const mobileLanguageDropdown = document.querySelector(".mobile-language-dropdown");
-  const languageOptions = document.querySelectorAll(".language-option");
-  const getStoredLanguage = () => {
-    try {
-      return sessionStorage.getItem(LANGUAGE_STORAGE_KEY);
-    } catch (e) {
-      return null;
-    }
+  let desktopLangOptions = Array.from(document.querySelectorAll(".desktop-lang-option"));
+  let languageOptions = Array.from(document.querySelectorAll(".language-option"));
+  const getCookie = (name) => {
+    if (typeof document === "undefined") return null;
+    const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
+    return match ? decodeURIComponent(match[1]) : null;
   };
+  const setCookie = (name, value) => {
+    if (typeof document === "undefined") return;
+    const encoded = encodeURIComponent(value);
+    document.cookie = `${name}=${encoded}; Path=/; Max-Age=31536000`;
+  };
+  const getStoredLanguage = () => getCookie(LANGUAGE_STORAGE_KEY);
   const setStoredLanguage = (lang) => {
-    try {
-      sessionStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
-    } catch (e) {
+    if (lang) {
+      setCookie(LANGUAGE_STORAGE_KEY, lang);
     }
   };
-  const resolveInitialLanguage = () => {
+  const resolveInitialLanguage = (supported, fallbackDefault) => {
     var _a, _b;
     const stored = getStoredLanguage();
-    if (stored) return stored;
+    if (stored && (!supported || supported.includes(stored))) return stored;
+    if (fallbackDefault && (!supported || supported.includes(fallbackDefault))) {
+      return fallbackDefault;
+    }
+    const htmlLang = document.documentElement.getAttribute("lang");
+    if (htmlLang && (!supported || supported.includes(htmlLang))) return htmlLang;
     const activeMobile = document.querySelector(".language-option.active");
-    if ((_a = activeMobile == null ? void 0 : activeMobile.dataset) == null ? void 0 : _a.lang) return activeMobile.dataset.lang;
+    if (((_a = activeMobile == null ? void 0 : activeMobile.dataset) == null ? void 0 : _a.lang) && (!supported || supported.includes(activeMobile.dataset.lang))) {
+      return activeMobile.dataset.lang;
+    }
     const activeDesktop = document.querySelector(".desktop-lang-option.active");
-    if ((_b = activeDesktop == null ? void 0 : activeDesktop.dataset) == null ? void 0 : _b.lang) return activeDesktop.dataset.lang;
+    if (((_b = activeDesktop == null ? void 0 : activeDesktop.dataset) == null ? void 0 : _b.lang) && (!supported || supported.includes(activeDesktop.dataset.lang))) {
+      return activeDesktop.dataset.lang;
+    }
     if (languageOptions.length > 0) {
       const lang = languageOptions[0].getAttribute("data-lang");
-      if (lang) return lang;
+      if (lang && (!supported || supported.includes(lang))) return lang;
     }
     if (desktopLangOptions.length > 0) {
       const lang = desktopLangOptions[0].getAttribute("data-lang");
-      if (lang) return lang;
+      if (lang && (!supported || supported.includes(lang))) return lang;
     }
-    return "en";
+    if (supported && supported.length > 0) {
+      return supported[0];
+    }
+    return "tr";
   };
-  let currentLanguage = resolveInitialLanguage();
+  let currentLanguage = resolveInitialLanguage(null, "tr");
   let selectedLanguage = currentLanguage;
   if (!getStoredLanguage()) {
     setStoredLanguage(currentLanguage);
@@ -165,14 +180,64 @@ var initLanguageSwitcher = () => {
     updateMobileLanguageDisplay(lang);
     updateDesktopLanguageDisplay(lang);
   };
-  const commitLanguage = (lang) => {
+  const getAlternateLink = (lang) => document.querySelector(`link[rel="alternate"][data-lang="${lang}"]`);
+  const navigateToLanguage = (lang) => {
+    if (!lang || typeof window === "undefined") return;
+    const link = getAlternateLink(lang);
+    if (!(link == null ? void 0 : link.href)) return;
+    if (link.href === window.location.href) return;
+    window.location.href = link.href;
+  };
+  const commitLanguage = (lang, options = {}) => {
     if (!lang) return;
     currentLanguage = lang;
     selectedLanguage = lang;
     syncLanguageUI(lang);
     setStoredLanguage(lang);
+    if (options.navigate !== false) {
+      navigateToLanguage(lang);
+    }
   };
-  syncLanguageUI(currentLanguage);
+  const refreshLanguageOptions = () => {
+    desktopLangOptions = Array.from(document.querySelectorAll(".desktop-lang-option"));
+    languageOptions = Array.from(document.querySelectorAll(".language-option"));
+  };
+  const applySupportedLanguages = (supported) => {
+    if (!supported || supported.length === 0) return;
+    desktopLangOptions.forEach((option) => {
+      if (!supported.includes(option.getAttribute("data-lang"))) {
+        option.remove();
+      }
+    });
+    languageOptions.forEach((option) => {
+      if (!supported.includes(option.getAttribute("data-lang"))) {
+        option.remove();
+      }
+    });
+    refreshLanguageOptions();
+  };
+  const loadSiteLanguages = async () => {
+    var _a, _b;
+    try {
+      const response = await fetch("./site.json", { cache: "no-store" });
+      if (!response.ok) return null;
+      const data = await response.json();
+      return (_b = (_a = data == null ? void 0 : data.content) == null ? void 0 : _a.languages) != null ? _b : null;
+    } catch (e) {
+      return null;
+    }
+  };
+  let supportedLanguages = null;
+  loadSiteLanguages().then((languages) => {
+    if (Array.isArray(languages == null ? void 0 : languages.supported)) {
+      supportedLanguages = languages.supported;
+      applySupportedLanguages(supportedLanguages);
+      const resolvedLanguage = resolveInitialLanguage(supportedLanguages, languages == null ? void 0 : languages.default);
+      commitLanguage(resolvedLanguage, { navigate: false });
+      return;
+    }
+    syncLanguageUI(currentLanguage);
+  });
   if (desktopLanguageDropdown && desktopLanguageMenu) {
     desktopLanguageDropdown.addEventListener("click", () => {
       const isOpen = isExpanded(desktopLanguageDropdown);

@@ -202,16 +202,11 @@
   }
 }
 @layer utilities {
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-    border-width: 0;
+  .visible {
+    visibility: visible;
+  }
+  .static {
+    position: static;
   }
   .mx-auto {
     margin-inline: auto;
@@ -227,6 +222,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .block {
+    display: block;
   }
   .contents {
     display: contents;
@@ -1284,7 +1282,7 @@
     img.iskur {
       width: calc(var(--spacing) * 12);
     }
-    img.iyzico {
+    svg.iyzico {
       width: auto;
     }
   }
@@ -1403,7 +1401,7 @@
       img.iskur {
         width: calc(var(--spacing) * 8);
       }
-      img.iyzico {
+      svg.iyzico {
         height: calc(var(--spacing) * 8);
       }
     }
@@ -2781,14 +2779,14 @@
     max-width: var(--container-7xl);
     flex-direction: column;
     align-items: center;
-    gap: calc(var(--spacing) * 6);
+    gap: calc(var(--spacing) * 10);
   }
   .hero-content {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: calc(var(--spacing) * 4);
+    gap: calc(var(--spacing) * 10);
     padding-inline: --container-padding-mobile;
   }
   .hero-heading-block {

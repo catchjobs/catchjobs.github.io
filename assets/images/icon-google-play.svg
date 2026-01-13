@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icon-google-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+<mask id="mask0_google_play" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="1" width="16" height="18">
+                <path d="M18.7802 9.00026C19.5733 9.43664 19.5733 10.5634 18.7802 10.9997L6.09767 17.9787C5.32532 18.4037 4.375 17.8521 4.375 16.9789L4.375 3.02109C4.375 2.14786 5.32532 1.59634 6.09767 2.02134L18.7802 9.00026Z" fill="#C4C4C4" />
+            </mask>
+            <g mask="url(#mask0_google_play)">
+                <path d="M4.7717 17.8414L12.6827 9.88595L4.90199 2.06152C4.59158 2.26051 4.375 2.60407 4.375 3.02094V16.9788C4.375 17.3344 4.53265 17.6367 4.7717 17.8414Z" fill="url(#paint0_linear_google_play)" />
+                <path d="M18.7803 9.00016C19.5733 9.43654 19.5733 10.5633 18.7803 10.9996L15.5807 12.7603L12.6827 9.88595L15.4329 7.1582L18.7803 9.00016Z" fill="url(#paint1_linear_google_play)" />
+                <path d="M15.5807 12.7601L12.6827 9.88574L4.77173 17.8412C5.11962 18.1391 5.63993 18.2303 6.09772 17.9784L15.5807 12.7601Z" fill="url(#paint2_linear_google_play)" />
+                <path d="M4.90198 2.06166L12.6827 9.88607L15.4329 7.1583L6.09764 2.02134C5.69401 1.79924 5.24178 1.84383 4.90198 2.06166Z" fill="url(#paint3_linear_google_play)" />
+            </g>
+            <defs>
+                <linearGradient id="paint0_linear_google_play" x1="9.79808" y1="6.79599" x2="4.41941" y2="12.2189" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00C3FF" />
+                    <stop offset="1" stop-color="#1BE2FA" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_google_play" x1="12.6827" y1="9.88597" x2="19.8366" y2="9.88597" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFCE00" />
+                    <stop offset="1" stop-color="#FFEA00" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_google_play" x1="4.60583" y1="18.8123" x2="14.1219" y2="11.1831" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#DE2453" />
+                    <stop offset="1" stop-color="#FE3944" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_google_play" x1="5.06727" y1="1.18836" x2="14.1234" y2="8.58529" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#11D574" />
+                    <stop offset="1" stop-color="#01F176" />
+                </linearGradient>
+            </defs>
+</svg>

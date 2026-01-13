@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="flag-netherlands" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+<g clip-path="url(#clip-flag-netherlands)">
+                <path d="M0.769043 6.92327H19.2306V0.769287H0.769043V6.92327Z" fill="#A2001D" />
+                <path d="M0.769043 19.2309H19.2306V13.0769H0.769043V19.2309Z" fill="#2E52B2" />
+                <path d="M0.769043 13.0769H19.2306V6.92328H0.769043V13.0769Z" fill="#F0F0F0" />
+            </g>
+            <defs>
+                <clipPath id="clip-flag-netherlands">
+                    <rect width="20" height="20" fill="white" />
+                </clipPath>
+            </defs>
+</svg>

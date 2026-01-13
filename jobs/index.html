@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+        <base href="http://localhost:3000/" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CatchJobs - İş Bulmanın En Kolay Yolu</title>
+        <link rel="canonical" href="http://localhost:3000/jobs/" data-canonical>
+        <link rel="alternate" href="http://localhost:3000/jobs/" hreflang="tr" data-lang="tr">
+        <link rel="alternate" href="http://localhost:3000/en/" hreflang="en" data-lang="en">
+        <link rel="alternate" href="http://localhost:3000/jobs/" hreflang="x-default">
+        <link rel="alternate" type="application/rss+xml" title="- | Türkçe RSS" href="http://localhost:3000/feed.xml">
+        <link rel="alternate" type="application/rss+xml" title="- | English RSS" href="http://localhost:3000/en/feed.xml">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./output.css?v=6a938943d333">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="CatchJobs" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header-navigation">
+        <div class="header-container">
+            <!-- Mobile Logo -->
+            <a href="./" class="logo-link logo-mobile" aria-label="CatchJobs Ana Sayfa">
+                <svg class="logo" width="214" height="26" viewBox="0 0 214 26" fill="none" aria-hidden="true">
+                    <use href="./assets/images/logo-catchjobs-line.svg#logo-catchjobs-line"></use>
+                </svg>
+            </a>
+
+            <!-- Desktop Left -->
+            <div class="desktop-left">
+                <!-- App Logo (Tablet) -->
+                <a href="./" class="app-logo-link" aria-label="CatchJobs Ana Sayfa">
+                    <svg class="app-logo" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                        <use href="./assets/images/logo-catchjobs-c.svg#logo-catchjobs-c"></use>
+                    </svg>
+                </a>
+
+                <!-- Horizontal Logo (Desktop 1280px+) -->
+                <a href="./" class="logo-desktop" aria-label="CatchJobs Ana Sayfa">
+                    <svg class="logo-horizontal" width="214" height="26" viewBox="0 0 214 26" fill="none"
+                        aria-hidden="true">
+                        <use href="./assets/images/logo-catchjobs-line.svg#logo-catchjobs-line"></use>
+                    </svg>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="desktop-nav">
+                    <a href="/" class="btn btn-ghost nav-item "
+                        lang="tr">Anasayfa</a>
+                    <a href="/jobs/" class="btn btn-ghost nav-item active"
+                        lang="tr">Aktif İlanlar</a>
+                    <a href="/about/" class="btn btn-ghost nav-item "
+                        lang="tr">Hakkımızda</a>
+                    <a href="/help/" class="btn btn-ghost nav-item "
+                        lang="tr">Yardım</a>
+                </nav>
+            </div>
+
+            <!-- Desktop Right -->
+            <div class="desktop-right">
+                <!-- Employer Portal Button -->
+                <a class="employer-button" href="https://webpanel.catchjobs.com/" target="_blank">
+                    İş Veren Portalı
+                </a>
+
+                <!-- Language Dropdown -->
+                <div class="language-dropdown-wrapper">
+                    <button class="btn btn-secondary-outline language-dropdown" type="button" id="languageDropdown"
+                        aria-expanded="false">
+                        <svg class="flag-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <use href="./assets/images/flag-tr.svg#flag-tr"></use>
+                        </svg>
+                        <svg class="dropdown-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            aria-hidden="true">
+                            <use href="./assets/images/icon-chevron-down.svg#icon-chevron-down"></use>
+                        </svg>
+                    </button>
+
+                    <!-- Desktop Language Dropdown Menu -->
+                    <div class="desktop-language-menu" id="desktopLanguageMenu">
+                        <button class="btn btn-ghost desktop-lang-option btn-dropdown-option active" data-lang="en">
+                            <svg class="desktop-lang-flag" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                aria-hidden="true">
+                                <use href="./assets/images/flag-uk.svg#flag-uk"></use>
+                            </svg>
+                            <span class="desktop-lang-name">English</span>
+                            <svg class="desktop-lang-check" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                aria-hidden="true">
+                                <use href="./assets/images/icon-check.svg#icon-check"></use>
+                            </svg>
+                        </button>
+
+                        <button class="btn btn-ghost desktop-lang-option btn-dropdown-option" data-lang="tr">
+                            <svg class="desktop-lang-flag" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                aria-hidden="true">
+                                <use href="./assets/images/flag-tr.svg#flag-tr"></use>
+                            </svg>
+                            <span class="desktop-lang-name">Türkçe</span>
+                            <svg class="desktop-lang-check" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                aria-hidden="true">
+                                <use href="./assets/images/icon-check.svg#icon-check"></use>
+                            </svg>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Right Actions -->
+            <div class="header-actions">
+                <button class="btn-icon btn-icon-ghost btn-icon-md" id="menuToggle"
+                    aria-label="Menüyü Aç" aria-expanded="false">
+                    <svg class="icon-hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <use href="./assets/images/icon-hamburger.svg#icon-hamburger"></use>
+                    </svg>
+                    <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <use href="./assets/images/icon-close.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <nav class="mobile-menu-nav">
+                <a href="/" class="mobile-nav-item " lang="tr">Anasayfa</a>
+                <a href="/jobs/" class="mobile-nav-item active" lang="tr">Aktif İlanlar</a>
+                <a href="/about/" class="mobile-nav-item " lang="tr">Hakkımızda</a>
+                <a href="/help/" class="mobile-nav-item " lang="tr">Yardım</a>
+            </nav>
+
+            <div class="mobile-menu-footer">
+                <a class="btn btn-secondary-outline mobile-menu-button" href="https://webpanel.catchjobs.com/"
+                    target="_blank">
+                    İşveren Portalı
+                </a>
+
+                <button class="btn btn-secondary-outline mobile-language-dropdown" type="button">
+                    <svg class="flag-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <use href="./assets/images/flag-uk.svg#flag-uk"></use>
+                    </svg>
+                    <span class="language-text">English</span>
+                    <svg class="dropdown-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <use href="./assets/images/icon-chevron-down.svg#icon-chevron-down"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page">
+    <p>Hazirlaniyor.</p>
+
+</div>
+
+    </main>
+
+    <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Content Section -->
+                <div class="footer-content">
+                    <!-- Logo and Slogan -->
+                    <div class="footer-logo-section">
+                        <div class="footer-logo">
+                            <svg width="79" height="36" viewBox="0 0 130 59" role="img" aria-label="CatchJobs">
+                                <use href="./assets/images/logo-catchjobs-multi-line.svg#logo-catchjobs-multi-line"></use>
+                            </svg>
+                        </div>
+                        <p class="footer-slogan">Kariyerini yazma, CatchJobs ile videoyla yakala!</p>
+                    </div>
+
+                    <!-- Footer Links -->
+                    <div class="footer-links">
+                        <!-- İlanlar Column -->
+                        <div class="footer-link-group">
+                            <h3 class="footer-link-title">İlanlar</h3>
+                            <nav class="footer-nav">
+                                <a href="./jobs" class="footer-link">Aktif İlanlar</a>
+                                <a href="./jobs/istanbul" class="footer-link">İstanbul İlanları</a>
+                                <a href="./jobs/ankara" class="footer-link">Ankara İlanları</a>
+                                <a href="./jobs/antalya" class="footer-link">Antalya İlanları</a>
+                            </nav>
+                        </div>
+
+                        <!-- CatchJobs Column -->
+                        <div class="footer-link-group">
+                            <h3 class="footer-link-title">CatchJobs</h3>
+                            <nav class="footer-nav">
+                                <a href="./about" class="footer-link">Hakkımızda</a>
+                                <a href="./press" class="footer-link">Basında Biz</a>
+                                <a href="./jobs" class="footer-link footer-link-with-badge hidden">
+                                    Kariyet Fırsatları
+                                    <span class="footer-link-badge">Hiring!</span>
+                                </a>
+                                <a href="./about" class="footer-link hidden">Yatırımcı İlişkileri</a>
+                                <a href="./terms" class="footer-link footer-link-external">
+                                    Kullanım Şartları ve Yasal
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                        <use href="./assets/images/icon-external-link.svg#icon-external-link"></use>
+                                    </svg>
+                                </a>
+                            </nav>
+                        </div>
+
+                        <!-- Destek Column -->
+                        <div class="footer-link-group">
+                            <h3 class="footer-link-title">Destek</h3>
+                            <nav class="footer-nav">
+                                <a href="./contact" class="footer-link">İletişim</a>
+                                <a href="./help" class="footer-link">Yardım Merkezi</a>
+                                <a href="./faq" class="footer-link">Sıkça Sorulan Sorular</a>
+                                <a href="./demo-request" class="footer-link footer-link-external hidden">
+                                    Uygulama Tanıtımı
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                        <use href="./assets/images/icon-external-link.svg#icon-external-link"></use>
+                                    </svg>
+                                </a>
+                                <a href="./demo-request" class="footer-link">Demo Talep Edin</a>
+                            </nav>
+                        </div>
+
+                        <!-- Kaynaklar Column -->
+                        <div class="footer-link-group">
+                            <h3 class="footer-link-title">Kaynaklar</h3>
+                            <nav class="footer-nav">
+                                <a href="./press" class="footer-link hidden">Blog</a>
+                                <a href="./jobs/archive" class="footer-link footer-link-external">
+                                    İş İlanları Arşivi
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                        <use href="./assets/images/icon-external-link.svg#icon-external-link"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.catchjobs.android&hl=tr" class="footer-link footer-link-external"
+                                    target="_blank" rel="noopener">
+                                    Google Play Profili
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                        <use href="./assets/images/icon-external-link.svg#icon-external-link"></use>
+                                    </svg>
+                                </a>
+                                <a href="https://apps.apple.com/tr/app/catchjobs-find-jobs-staff/id1499100904" class="footer-link footer-link-external" target="_blank"
+                                    rel="noopener">
+                                    App Store Profili
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                        <use href="./assets/images/icon-external-link.svg#icon-external-link"></use>
+                                    </svg>
+                                </a>
+                                <a href="./" class="footer-link hidden">API Dökümanları</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Badges -->
+                <div class="footer-badges">
+                    <img src="./assets/images/iskur.png" alt="İşkur Özel İstihdam Bürosu" class="iskur">
+                    <svg class="iyzico" viewBox="0 0 429 32" role="img" aria-label="Iyzico ile Öde">
+                        <use href="./assets/images/logo-iyzico.svg#logo-iyzico"></use>
+                    </svg>
+                </div>
+
+                <!-- Legal Disclaimer -->
+                <p class="footer-disclaimer">
+                    www.catchjobs.com, Türkiye İş Kurumunun 31.12.2021 tarih ve 10447112 numaralı izin belgeleri ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Türkiye İş Kurumu Ankara İl Müdürlüğü: 0(312) 431 02 34 Türkiye iş Kurumu Ankara Çalışma ve İş Kurumu Çankaya Hizmet Merkezi: 0(312) 431 02 33
+                </p>
+
+                <!-- Copyright and Socials -->
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© Copyright CatchJobs. Tüm hakları saklıdır.</p>
+                    <div class="footer-socials">
+                        <a href="https://facebook.com" class="footer-social-link" target="_blank" rel="noopener"
+                            aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <use href="./assets/images/icon-facebook.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener"
+                            aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <use href="./assets/images/icon-instagram.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" class="footer-social-link" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <use href="./assets/images/icon-linkedin.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <script class="hidden">
+             var data = {"lang":"tr","locale":{"code":"tr","isEn":false,"isTr":true,"isDe":false,"isEnglish":false,"isTurkish":true,"isGerman":false,"isDefault":true},"isEnglish":false,"isTurkish":true,"theme":"light","site":{"title":"-","description":"-","author":"CatchJobs","owner":"-","role":"-","quote":"-","home":"/","url":"http://localhost:3000/","currentLanguage":"tr","currentCulture":"tr_TR","currentCanonical":"http://localhost:3000/","currentLangLabel":"Türkçe","themeColor":"#0284c7","analyticsEnabled":false,"gtmId":"","year":2026,"languages":{"supported":["tr","en"],"default":"tr","canonical":{"tr":"/","en":"/en/"},"canonicalUrl":{"tr":"http://localhost:3000/","en":"http://localhost:3000/en/"},"cultures":{"tr":"tr_TR","en":"en_US"}},"languagesCsv":"tr,en","defaultLanguage":"tr","pagination":{"pageSize":2},"features":{"postOperations":{"enabled":true,"like":false,"dislike":false,"comment":false,"share":{"enabled":true,"whatsapp":true,"x":true,"linkedin":true,"facebook":false,"copy":true}},"search":false}},"menu":{"items":[{"key":"home","label":"Anasayfa","url":"~/","isActive":false},{"key":"jobs","label":"Aktif İlanlar","url":"/jobs/","isActive":true},{"key":"hakkimizda","label":"Hakkımızda","url":"/about/","isActive":false},{"key":"help","label":"Yardım","url":"/help/","isActive":false}],"activeKey":"jobs"},"footer":{"tags":[],"policies":[],"social":[{"key":"rss","tone":"rss","icon":"\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"16px\" height=\"16px\" viewBox=\"0 0 32 32\"\u003e\u003cg class=\"nc-icon-wrapper\" fill=\"currentColor\"\u003e\u003ccircle cx=\"6.566\" cy=\"25.434\" r=\"3.566\"\u003e\u003c/circle\u003e\u003cpath d=\"M20.234,29h-5.051c0-6.728-5.454-12.183-12.183-12.183h0v-5.051c9.518,0,17.234,7.716,17.234,17.234Z\"\u003e\u003c/path\u003e\u003cpath d=\"M23.8,29c0-11.488-9.312-20.8-20.8-20.8V3c14.359,0,26,11.641,26,26h-5.2Z\"\u003e\u003c/path\u003e\u003c/g\u003e\u003c/svg\u003e","url":"/feed.xml","external":false,"label":"RSS"}],"tagline":"Özenle seçilmiş içeriklerle üretken kal."},"pages":{"tr":{"temp":[{"id":"","title":"404 - Sayfa Bulunamadı","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/404/","type":"category"},{"id":"home","title":"Anasayfa","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"~/","type":"category"},{"id":"press","title":"Basında Biz","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/press/","type":"category"},{"id":"demo-request","title":"Demo Talep Edin","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/demo-request/","type":"category"},{"id":"hakkimizda","title":"Hakkımızda","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/about/","type":"category"},{"id":"jobs","title":"Is Ilanlari","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/","type":"category"},{"id":"jobs-ankara","title":"Is Ilanlari - Ankara","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/ankara/","type":"category"},{"id":"jobs-antalya","title":"Is Ilanlari - Antalya","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/antalya/","type":"category"},{"id":"jobs-archive","title":"Is Ilanlari - Arsiv","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/archive/","type":"category"},{"id":"jobs-istanbul","title":"Is Ilanlari - Istanbul","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/istanbul/","type":"category"},{"id":"contact","title":"İletişim","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/contact/","type":"category"},{"id":"terms","title":"Kullanım Koşulları","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/terms/","type":"category"},{"id":"faq","title":"Sıkça Sorulan Sorular","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/faq/","type":"category"},{"id":"help","title":"Yardim","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/help/","type":"category"}]},"en":{"temp":[{"id":"","title":"404 - Page Not Found","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/404/","type":"category"},{"id":"hakkimizda","title":"About Us","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/about/","type":"category"},{"id":"jobs-ankara","title":"Ankara Jobs","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/ankara/","type":"category"},{"id":"jobs-antalya","title":"Antalya Jobs","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/antalya/","type":"category"},{"id":"contact","title":"Contact","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/contact/","type":"category"},{"id":"faq","title":"Frequently Asked Questions","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/faq/","type":"category"},{"id":"help","title":"Help","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/help/","type":"category"},{"id":"home","title":"Home Page","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/","type":"category"},{"id":"press","title":"In the Press","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/press/","type":"category"},{"id":"jobs-istanbul","title":"Istanbul Jobs","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/istanbul/","type":"category"},{"id":"jobs-archive","title":"Job Archive","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/archive/","type":"category"},{"id":"jobs","title":"Jobs","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/","type":"category"},{"id":"demo-request","title":"Request Demo","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/demo-request/","type":"category"},{"id":"terms","title":"Terms of Usage","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/terms/","type":"category"}]}},"i18n":{"header":{"brand":"Örnek Blog","subtitle":"Teknik notlar, tasarım fikirleri ve modern web tüyoları.","actions":{"language":"Dili değiştir","languageShort":"TR","theme":"Temayı değiştir","menu":"Menüyü aç/kapat"}},"hero":{"title":"Modern geliştiriciler için kısa ve öz içerikler","lede":"Türkçe ve İngilizce rehberlerle araç zincirinizi kurun, tasarım sistemleri oluşturun ve TypeScript projelerinizi ölçeklendirin.","primaryCta":"Son yazıları oku","secondaryCta":"Projeyi GitHub'da görüntüle"},"buttons":{"readMore":"Devamını oku","viewAll":"Tümünü gör","backToHome":"Ana sayfaya dön"},"meta":{"publishedOn":"Yayın tarihi","updatedOn":"Güncellendi","category":"Kategori","readingTime":"dk okuma"},"listing":{"relatedTitle":"İlgili Yazılar","tagPrefix":"Etiket","categoryPrefix":"Kategori","current":"Bu yazı","empty":"Henüz içerik bulunamadı."},"pagination":{"previous":"Önceki","next":"Sonraki"},"post":{"tagsHeading":"Etiketler"},"footer":{"tagline":"Özenle seçilmiş içeriklerle üretken kal.","policies":{"cookie":"Çerez Politikası","privacy":"Gizlilik Politikası"},"note":"Örnek Blog © 2025","tags":{"web":"Web Geliştirme","javascript":"JavaScript","css":"CSS","typescript":"TypeScript"}},"sections":{"featured":{"title":"Öne Çıkan Yazılar","subtitle":"Takımın sıklıkla referans verdiği kılavuzlar."},"latestPosts":{"title":"Son Yazılar","subtitle":"Takip edilen konulardan en taze eklemeler.","empty":"Henüz içerik yok. Çok yakında ekleyeceğiz."}},"sharing":{"copyLink":"Bağlantıyı kopyala","sharePrompt":"Bu yazıyı paylaş","copied":"Kopyalandı!"},"forms":{"searchPlaceholder":"Yazı veya konu ara...","subscribeCta":"Bültene katıl"},"layout":{"head":{"title":"CatchJobs - İş Bulmanın En Kolay Yolu"},"header":{"logoLabel":"CatchJobs Ana Sayfa","nav":{"home":"Anasayfa","jobs":"Aktif İlanlar","about":"Hakkımızda","help":"Yardım"},"language":{"english":"English","turkish":"Türkçe"},"menu":{"open":"Menüyü Aç","close":"Menüyü Kapat"},"employerPortalDesktop":"İş Veren Portalı","employerPortalMobile":"İşveren Portalı"},"footer":{"slogan":"Kariyerini yazma, CatchJobs ile videoyla yakala!","columns":{"jobs":{"title":"İlanlar","active":"Aktif İlanlar","istanbul":"İstanbul İlanları","ankara":"Ankara İlanları","antalya":"Antalya İlanları"},"catchjobs":{"title":"CatchJobs","about":"Hakkımızda","press":"Basında Biz","careers":"Kariyet Fırsatları","hiringBadge":"Hiring!","investors":"Yatırımcı İlişkileri","terms":"Kullanım Şartları ve Yasal"},"support":{"title":"Destek","contact":"İletişim","helpCenter":"Yardım Merkezi","faq":"Sıkça Sorulan Sorular","appDemo":"Uygulama Tanıtımı","demoRequest":"Demo Talep Edin"},"resources":{"title":"Kaynaklar","blog":"Blog","archive":"İş İlanları Arşivi","googlePlay":"Google Play Profili","appStore":"App Store Profili","apiDocs":"API Dökümanları"}},"badges":{"iskurAlt":"İşkur Özel İstihdam Bürosu","iyzicoAria":"Iyzico ile Öde"},"disclaimer":"www.catchjobs.com, Türkiye İş Kurumunun 31.12.2021 tarih ve 10447112 numaralı izin belgeleri ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Türkiye İş Kurumu Ankara İl Müdürlüğü: 0(312) 431 02 34 Türkiye iş Kurumu Ankara Çalışma ve İş Kurumu Çankaya Hizmet Merkezi: 0(312) 431 02 33","copyright":"© Copyright CatchJobs. Tüm hakları saklıdır.","social":{"facebook":"Facebook","instagram":"Instagram","linkedin":"LinkedIn"},"languageModal":{"title":"Dil Seçin","close":"Kapat","english":"English","turkish":"Türkçe","save":"Kaydet"}}},"filter":{"clear":"Aramayı temizle","resultsCount":"0 adet sonuç bulundu","noResults":"Aramanıza/filtrelemelerinize uygun sonuç bulunamadı.","reset":"Filtreleri Sıfırla"},"jobs":{"applicantsSuffix":"kişi başvurdu","tags":{"fullTime":"Tam Zamanlı","experience":"Deneyim Gerekli"},"cta":"Tüm İş İlanlarına Gözat"}},"i18nInline":"{\"tr\":{\"header\":{\"brand\":\"Örnek Blog\",\"subtitle\":\"Teknik notlar, tasarım fikirleri ve modern web tüyoları.\",\"actions\":{\"language\":\"Dili değiştir\",\"languageShort\":\"TR\",\"theme\":\"Temayı değiştir\",\"menu\":\"Menüyü aç/kapat\"}},\"hero\":{\"title\":\"Modern geliştiriciler için kısa ve öz içerikler\",\"lede\":\"Türkçe ve İngilizce rehberlerle araç zincirinizi kurun, tasarım sistemleri oluşturun ve TypeScript projelerinizi ölçeklendirin.\",\"primaryCta\":\"Son yazıları oku\",\"secondaryCta\":\"Projeyi GitHub'da görüntüle\"},\"buttons\":{\"readMore\":\"Devamını oku\",\"viewAll\":\"Tümünü gör\",\"backToHome\":\"Ana sayfaya dön\"},\"meta\":{\"publishedOn\":\"Yayın tarihi\",\"updatedOn\":\"Güncellendi\",\"category\":\"Kategori\",\"readingTime\":\"dk okuma\"},\"listing\":{\"relatedTitle\":\"İlgili Yazılar\",\"tagPrefix\":\"Etiket\",\"categoryPrefix\":\"Kategori\",\"current\":\"Bu yazı\",\"empty\":\"Henüz içerik bulunamadı.\"},\"pagination\":{\"previous\":\"Önceki\",\"next\":\"Sonraki\"},\"post\":{\"tagsHeading\":\"Etiketler\"},\"footer\":{\"tagline\":\"Özenle seçilmiş içeriklerle üretken kal.\",\"policies\":{\"cookie\":\"Çerez Politikası\",\"privacy\":\"Gizlilik Politikası\"},\"note\":\"Örnek Blog © 2025\",\"tags\":{\"web\":\"Web Geliştirme\",\"javascript\":\"JavaScript\",\"css\":\"CSS\",\"typescript\":\"TypeScript\"}},\"sections\":{\"featured\":{\"title\":\"Öne Çıkan Yazılar\",\"subtitle\":\"Takımın sıklıkla referans verdiği kılavuzlar.\"},\"latestPosts\":{\"title\":\"Son Yazılar\",\"subtitle\":\"Takip edilen konulardan en taze eklemeler.\",\"empty\":\"Henüz içerik yok. Çok yakında ekleyeceğiz.\"}},\"sharing\":{\"copyLink\":\"Bağlantıyı kopyala\",\"sharePrompt\":\"Bu yazıyı paylaş\",\"copied\":\"Kopyalandı!\"},\"forms\":{\"searchPlaceholder\":\"Yazı veya konu ara...\",\"subscribeCta\":\"Bültene katıl\"},\"layout\":{\"head\":{\"title\":\"CatchJobs - İş Bulmanın En Kolay Yolu\"},\"header\":{\"logoLabel\":\"CatchJobs Ana Sayfa\",\"nav\":{\"home\":\"Anasayfa\",\"jobs\":\"Aktif İlanlar\",\"about\":\"Hakkımızda\",\"help\":\"Yardım\"},\"language\":{\"english\":\"English\",\"turkish\":\"Türkçe\"},\"menu\":{\"open\":\"Menüyü Aç\",\"close\":\"Menüyü Kapat\"},\"employerPortalDesktop\":\"İş Veren Portalı\",\"employerPortalMobile\":\"İşveren Portalı\"},\"footer\":{\"slogan\":\"Kariyerini yazma, CatchJobs ile videoyla yakala!\",\"columns\":{\"jobs\":{\"title\":\"İlanlar\",\"active\":\"Aktif İlanlar\",\"istanbul\":\"İstanbul İlanları\",\"ankara\":\"Ankara İlanları\",\"antalya\":\"Antalya İlanları\"},\"catchjobs\":{\"title\":\"CatchJobs\",\"about\":\"Hakkımızda\",\"press\":\"Basında Biz\",\"careers\":\"Kariyet Fırsatları\",\"hiringBadge\":\"Hiring!\",\"investors\":\"Yatırımcı İlişkileri\",\"terms\":\"Kullanım Şartları ve Yasal\"},\"support\":{\"title\":\"Destek\",\"contact\":\"İletişim\",\"helpCenter\":\"Yardım Merkezi\",\"faq\":\"Sıkça Sorulan Sorular\",\"appDemo\":\"Uygulama Tanıtımı\",\"demoRequest\":\"Demo Talep Edin\"},\"resources\":{\"title\":\"Kaynaklar\",\"blog\":\"Blog\",\"archive\":\"İş İlanları Arşivi\",\"googlePlay\":\"Google Play Profili\",\"appStore\":\"App Store Profili\",\"apiDocs\":\"API Dökümanları\"}},\"badges\":{\"iskurAlt\":\"İşkur Özel İstihdam Bürosu\",\"iyzicoAria\":\"Iyzico ile Öde\"},\"disclaimer\":\"www.catchjobs.com, Türkiye İş Kurumunun 31.12.2021 tarih ve 10447112 numaralı izin belgeleri ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Türkiye İş Kurumu Ankara İl Müdürlüğü: 0(312) 431 02 34 Türkiye iş Kurumu Ankara Çalışma ve İş Kurumu Çankaya Hizmet Merkezi: 0(312) 431 02 33\",\"copyright\":\"© Copyright CatchJobs. Tüm hakları saklıdır.\",\"social\":{\"facebook\":\"Facebook\",\"instagram\":\"Instagram\",\"linkedin\":\"LinkedIn\"},\"languageModal\":{\"title\":\"Dil Seçin\",\"close\":\"Kapat\",\"english\":\"English\",\"turkish\":\"Türkçe\",\"save\":\"Kaydet\"}}},\"filter\":{\"clear\":\"Aramayı temizle\",\"resultsCount\":\"0 adet sonuç bulundu\",\"noResults\":\"Aramanıza/filtrelemelerinize uygun sonuç bulunamadı.\",\"reset\":\"Filtreleri Sıfırla\"},\"jobs\":{\"applicantsSuffix\":\"kişi başvurdu\",\"tags\":{\"fullTime\":\"Tam Zamanlı\",\"experience\":\"Deneyim Gerekli\"},\"cta\":\"Tüm İş İlanlarına Gözat\"}},\"en\":{\"header\":{\"brand\":\"Sample Blog\",\"subtitle\":\"Technical notes, design inspiration, and modern web insights.\",\"actions\":{\"language\":\"Switch language\",\"languageShort\":\"EN\",\"theme\":\"Toggle theme\",\"menu\":\"Toggle menu\"}},\"hero\":{\"title\":\"Concise stories for modern builders\",\"lede\":\"Use bilingual guides to shape your toolchain, build design systems, and scale TypeScript projects.\",\"primaryCta\":\"Read the latest posts\",\"secondaryCta\":\"View the project on GitHub\"},\"buttons\":{\"readMore\":\"Read more\",\"viewAll\":\"View all\",\"backToHome\":\"Back to home\"},\"meta\":{\"publishedOn\":\"Published on\",\"updatedOn\":\"Updated\",\"category\":\"Category\",\"readingTime\":\"min read\"},\"listing\":{\"relatedTitle\":\"Related Articles\",\"tagPrefix\":\"Tag\",\"categoryPrefix\":\"Category\",\"current\":\"Current post\",\"empty\":\"Nothing to show yet.\"},\"pagination\":{\"previous\":\"Previous\",\"next\":\"Next\"},\"post\":{\"tagsHeading\":\"Tags\"},\"footer\":{\"tagline\":\"Stay productive with carefully curated content.\",\"policies\":{\"cookie\":\"Cookie Policy\",\"privacy\":\"Privacy Policy\"},\"note\":\"Sample Blog © 2025\",\"tags\":{\"web\":\"Web Development\",\"javascript\":\"JavaScript\",\"css\":\"CSS\",\"typescript\":\"TypeScript\"}},\"sections\":{\"featured\":{\"title\":\"Featured Posts\",\"subtitle\":\"Guides the team references most often.\"},\"latestPosts\":{\"title\":\"Latest Posts\",\"subtitle\":\"Fresh additions from the topics you follow.\",\"empty\":\"No content yet. Fresh posts are coming soon.\"}},\"sharing\":{\"copyLink\":\"Copy link\",\"sharePrompt\":\"Share this article\",\"copied\":\"Copied!\"},\"forms\":{\"searchPlaceholder\":\"Search posts or topics...\",\"subscribeCta\":\"Join the newsletter\"},\"layout\":{\"head\":{\"title\":\"CatchJobs - The Easiest Way to Find a Job\"},\"header\":{\"logoLabel\":\"CatchJobs Home\",\"nav\":{\"home\":\"Home\",\"jobs\":\"Open Roles\",\"about\":\"About Us\",\"help\":\"Help\"},\"language\":{\"english\":\"English\",\"turkish\":\"Turkish\"},\"menu\":{\"open\":\"Open menu\",\"close\":\"Close menu\"},\"employerPortalDesktop\":\"Employer Portal\",\"employerPortalMobile\":\"Employer Portal\"},\"footer\":{\"slogan\":\"Don't write your career; capture it on video with CatchJobs!\",\"columns\":{\"jobs\":{\"title\":\"Jobs\",\"active\":\"Open Roles\",\"istanbul\":\"Istanbul Jobs\",\"ankara\":\"Ankara Jobs\",\"antalya\":\"Antalya Jobs\"},\"catchjobs\":{\"title\":\"CatchJobs\",\"about\":\"About Us\",\"press\":\"In the Press\",\"careers\":\"Career Opportunities\",\"hiringBadge\":\"Hiring!\",\"investors\":\"Investor Relations\",\"terms\":\"Terms of Use \\u0026 Legal\"},\"support\":{\"title\":\"Support\",\"contact\":\"Contact\",\"helpCenter\":\"Help Center\",\"faq\":\"FAQ\",\"appDemo\":\"App Demo\",\"demoRequest\":\"Request a Demo\"},\"resources\":{\"title\":\"Resources\",\"blog\":\"Blog\",\"archive\":\"Job Listings Archive\",\"googlePlay\":\"Google Play Profile\",\"appStore\":\"App Store Profile\",\"apiDocs\":\"API Documentation\"}},\"badges\":{\"iskurAlt\":\"ISKUR Private Employment Agency\",\"iyzicoAria\":\"Pay with Iyzico\"},\"disclaimer\":\"www.catchjobs.com operates with permit documents of the Turkish Employment Agency dated 31.12.2021 and numbered 10447112. Under Law No. 4904, it is prohibited to charge job seekers. Turkish Employment Agency Ankara Provincial Directorate: 0(312) 431 02 34 Turkish Employment Agency Ankara Labor and Employment Agency Cankaya Service Center: 0(312) 431 02 33\",\"copyright\":\"© Copyright CatchJobs. All rights reserved.\",\"social\":{\"facebook\":\"Facebook\",\"instagram\":\"Instagram\",\"linkedin\":\"LinkedIn\"},\"languageModal\":{\"title\":\"Select Language\",\"close\":\"Close\",\"english\":\"English\",\"turkish\":\"Turkish\",\"save\":\"Save\"}}},\"filter\":{\"clear\":\"Clear search\",\"resultsCount\":\"0 results found\",\"noResults\":\"No results matched your search or filters.\",\"reset\":\"Reset Filters\"},\"jobs\":{\"applicantsSuffix\":\"applicants\",\"tags\":{\"fullTime\":\"Full Time\",\"experience\":\"Experience Required\"},\"cta\":\"Browse All Job Listings\"}}}","page":{"title":"Is Ilanlari","description":"","robots":"index,follow","canonical":"http://localhost:3000/jobs/","alternates":{"base":{"tr":"http://localhost:3000/","en":"http://localhost:3000/en/"},"tr":"http://localhost:3000/jobs/","en":"http://localhost:3000/en/","default":"http://localhost:3000/jobs/"},"alternateLinks":[{"lang":"tr","hreflang":"tr","url":"http://localhost:3000/jobs/","label":"Türkçe","baseUrl":"http://localhost:3000/"},{"lang":"en","hreflang":"en","url":"http://localhost:3000/en/","label":"English","baseUrl":"http://localhost:3000/en/"}],"og":{"title":"Is Ilanlari","description":"","type":"website","url":"http://localhost:3000/jobs/","image":"https://images.unsplash.com/photo-1518770660439-4636190af475/?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","locale":"tr_TR","altLocale":["en_US"]},"twitter":{"card":"summary_large_image","title":"Is Ilanlari","description":"","image":"https://images.unsplash.com/photo-1518770660439-4636190af475/?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","url":"http://localhost:3000/jobs/"},"structuredData":"{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"headline\":\"Is Ilanlari\",\"description\":\"\",\"publisher\":{\"@type\":\"Person\",\"name\":\"CatchJobs\",\"url\":\"http://localhost:3000/\"},\"inLanguage\":\"tr\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"http://localhost:3000/jobs/\"}}"},"content":"\u003cdiv class=\"page\"\u003e\n    \u003cp\u003eHazirlaniyor.\u003c/p\u003e\n\n\u003c/div\u003e\n","scripts":{"analytics":[],"body":[]}};
+            </script>
+        </footer>
+
+        <!-- Language Selection Modal (Mobile Only) -->
+        <div class="language-modal-overlay" id="languageModalOverlay">
+            <div class="language-modal" id="languageModal">
+                <!-- Modal Header -->
+                <div class="language-modal-header">
+                    <h2 class="language-modal-title">Dil Seçin</h2>
+                    <button class="language-modal-close" id="languageModalClose" aria-label="Kapat">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <use href="./assets/images/icon-close.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Modal Content -->
+                <div class="language-modal-content">
+                    <!-- Language Options -->
+                    <div class="language-options">
+                        <button class="language-option active" data-lang="en">
+                            <svg class="language-flag" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <use href="./assets/images/flag-uk.svg#flag-uk"></use>
+                            </svg>
+                            <span class="language-name">English</span>
+                            <svg class="language-check" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <use href="./assets/images/icon-check.svg#icon-check"></use>
+                            </svg>
+                        </button>
+
+                        <button class="language-option" data-lang="tr">
+                            <svg class="language-flag" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <use href="./assets/images/flag-tr.svg#flag-tr"></use>
+                            </svg>
+                            <span class="language-name">Türkçe</span>
+                            <svg class="language-check" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <use href="./assets/images/icon-check.svg#icon-check"></use>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                    <!-- Save Button -->
+                    <button class="btn btn-secondary-outline language-save-button" id="languageSaveButton">
+                        Kaydet
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    <script src="./output.js?v=6a938943d333"></script>
+    <script class="easter-egg">
+        var data = {"lang":"tr","locale":{"code":"tr","isEn":false,"isTr":true,"isDe":false,"isEnglish":false,"isTurkish":true,"isGerman":false,"isDefault":true},"isEnglish":false,"isTurkish":true,"theme":"light","site":{"title":"-","description":"-","author":"CatchJobs","owner":"-","role":"-","quote":"-","home":"/","url":"http://localhost:3000/","currentLanguage":"tr","currentCulture":"tr_TR","currentCanonical":"http://localhost:3000/","currentLangLabel":"Türkçe","themeColor":"#0284c7","analyticsEnabled":false,"gtmId":"","year":2026,"languages":{"supported":["tr","en"],"default":"tr","canonical":{"tr":"/","en":"/en/"},"canonicalUrl":{"tr":"http://localhost:3000/","en":"http://localhost:3000/en/"},"cultures":{"tr":"tr_TR","en":"en_US"}},"languagesCsv":"tr,en","defaultLanguage":"tr","pagination":{"pageSize":2},"features":{"postOperations":{"enabled":true,"like":false,"dislike":false,"comment":false,"share":{"enabled":true,"whatsapp":true,"x":true,"linkedin":true,"facebook":false,"copy":true}},"search":false}},"menu":{"items":[{"key":"home","label":"Anasayfa","url":"~/","isActive":false},{"key":"jobs","label":"Aktif İlanlar","url":"/jobs/","isActive":true},{"key":"hakkimizda","label":"Hakkımızda","url":"/about/","isActive":false},{"key":"help","label":"Yardım","url":"/help/","isActive":false}],"activeKey":"jobs"},"footer":{"tags":[],"policies":[],"social":[{"key":"rss","tone":"rss","icon":"\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"16px\" height=\"16px\" viewBox=\"0 0 32 32\"\u003e\u003cg class=\"nc-icon-wrapper\" fill=\"currentColor\"\u003e\u003ccircle cx=\"6.566\" cy=\"25.434\" r=\"3.566\"\u003e\u003c/circle\u003e\u003cpath d=\"M20.234,29h-5.051c0-6.728-5.454-12.183-12.183-12.183h0v-5.051c9.518,0,17.234,7.716,17.234,17.234Z\"\u003e\u003c/path\u003e\u003cpath d=\"M23.8,29c0-11.488-9.312-20.8-20.8-20.8V3c14.359,0,26,11.641,26,26h-5.2Z\"\u003e\u003c/path\u003e\u003c/g\u003e\u003c/svg\u003e","url":"/feed.xml","external":false,"label":"RSS"}],"tagline":"Özenle seçilmiş içeriklerle üretken kal."},"pages":{"tr":{"temp":[{"id":"","title":"404 - Sayfa Bulunamadı","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/404/","type":"category"},{"id":"home","title":"Anasayfa","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"~/","type":"category"},{"id":"press","title":"Basında Biz","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/press/","type":"category"},{"id":"demo-request","title":"Demo Talep Edin","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/demo-request/","type":"category"},{"id":"hakkimizda","title":"Hakkımızda","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/about/","type":"category"},{"id":"jobs","title":"Is Ilanlari","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/","type":"category"},{"id":"jobs-ankara","title":"Is Ilanlari - Ankara","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/ankara/","type":"category"},{"id":"jobs-antalya","title":"Is Ilanlari - Antalya","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/antalya/","type":"category"},{"id":"jobs-archive","title":"Is Ilanlari - Arsiv","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/archive/","type":"category"},{"id":"jobs-istanbul","title":"Is Ilanlari - Istanbul","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/jobs/istanbul/","type":"category"},{"id":"contact","title":"İletişim","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/contact/","type":"category"},{"id":"terms","title":"Kullanım Koşulları","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/terms/","type":"category"},{"id":"faq","title":"Sıkça Sorulan Sorular","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/faq/","type":"category"},{"id":"help","title":"Yardim","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"01 Ocak 2025","canonical":"/help/","type":"category"}]},"en":{"temp":[{"id":"","title":"404 - Page Not Found","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/404/","type":"category"},{"id":"hakkimizda","title":"About Us","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/about/","type":"category"},{"id":"jobs-ankara","title":"Ankara Jobs","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/ankara/","type":"category"},{"id":"jobs-antalya","title":"Antalya Jobs","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/antalya/","type":"category"},{"id":"contact","title":"Contact","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/contact/","type":"category"},{"id":"faq","title":"Frequently Asked Questions","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/faq/","type":"category"},{"id":"help","title":"Help","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/help/","type":"category"},{"id":"home","title":"Home Page","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/","type":"category"},{"id":"press","title":"In the Press","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/press/","type":"category"},{"id":"jobs-istanbul","title":"Istanbul Jobs","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/istanbul/","type":"category"},{"id":"jobs-archive","title":"Job Archive","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/archive/","type":"category"},{"id":"jobs","title":"Jobs","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/jobs/","type":"category"},{"id":"demo-request","title":"Request Demo","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/demo-request/","type":"category"},{"id":"terms","title":"Terms of Usage","date":"2025-01-01T00:00:00.000Z","cover":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","coverAlt":"","coverCaption":"","readingTime":0,"dateDisplay":"January 01, 2025","canonical":"/en/terms/","type":"category"}]}},"i18n":{"header":{"brand":"Örnek Blog","subtitle":"Teknik notlar, tasarım fikirleri ve modern web tüyoları.","actions":{"language":"Dili değiştir","languageShort":"TR","theme":"Temayı değiştir","menu":"Menüyü aç/kapat"}},"hero":{"title":"Modern geliştiriciler için kısa ve öz içerikler","lede":"Türkçe ve İngilizce rehberlerle araç zincirinizi kurun, tasarım sistemleri oluşturun ve TypeScript projelerinizi ölçeklendirin.","primaryCta":"Son yazıları oku","secondaryCta":"Projeyi GitHub'da görüntüle"},"buttons":{"readMore":"Devamını oku","viewAll":"Tümünü gör","backToHome":"Ana sayfaya dön"},"meta":{"publishedOn":"Yayın tarihi","updatedOn":"Güncellendi","category":"Kategori","readingTime":"dk okuma"},"listing":{"relatedTitle":"İlgili Yazılar","tagPrefix":"Etiket","categoryPrefix":"Kategori","current":"Bu yazı","empty":"Henüz içerik bulunamadı."},"pagination":{"previous":"Önceki","next":"Sonraki"},"post":{"tagsHeading":"Etiketler"},"footer":{"tagline":"Özenle seçilmiş içeriklerle üretken kal.","policies":{"cookie":"Çerez Politikası","privacy":"Gizlilik Politikası"},"note":"Örnek Blog © 2025","tags":{"web":"Web Geliştirme","javascript":"JavaScript","css":"CSS","typescript":"TypeScript"}},"sections":{"featured":{"title":"Öne Çıkan Yazılar","subtitle":"Takımın sıklıkla referans verdiği kılavuzlar."},"latestPosts":{"title":"Son Yazılar","subtitle":"Takip edilen konulardan en taze eklemeler.","empty":"Henüz içerik yok. Çok yakında ekleyeceğiz."}},"sharing":{"copyLink":"Bağlantıyı kopyala","sharePrompt":"Bu yazıyı paylaş","copied":"Kopyalandı!"},"forms":{"searchPlaceholder":"Yazı veya konu ara...","subscribeCta":"Bültene katıl"},"layout":{"head":{"title":"CatchJobs - İş Bulmanın En Kolay Yolu"},"header":{"logoLabel":"CatchJobs Ana Sayfa","nav":{"home":"Anasayfa","jobs":"Aktif İlanlar","about":"Hakkımızda","help":"Yardım"},"language":{"english":"English","turkish":"Türkçe"},"menu":{"open":"Menüyü Aç","close":"Menüyü Kapat"},"employerPortalDesktop":"İş Veren Portalı","employerPortalMobile":"İşveren Portalı"},"footer":{"slogan":"Kariyerini yazma, CatchJobs ile videoyla yakala!","columns":{"jobs":{"title":"İlanlar","active":"Aktif İlanlar","istanbul":"İstanbul İlanları","ankara":"Ankara İlanları","antalya":"Antalya İlanları"},"catchjobs":{"title":"CatchJobs","about":"Hakkımızda","press":"Basında Biz","careers":"Kariyet Fırsatları","hiringBadge":"Hiring!","investors":"Yatırımcı İlişkileri","terms":"Kullanım Şartları ve Yasal"},"support":{"title":"Destek","contact":"İletişim","helpCenter":"Yardım Merkezi","faq":"Sıkça Sorulan Sorular","appDemo":"Uygulama Tanıtımı","demoRequest":"Demo Talep Edin"},"resources":{"title":"Kaynaklar","blog":"Blog","archive":"İş İlanları Arşivi","googlePlay":"Google Play Profili","appStore":"App Store Profili","apiDocs":"API Dökümanları"}},"badges":{"iskurAlt":"İşkur Özel İstihdam Bürosu","iyzicoAria":"Iyzico ile Öde"},"disclaimer":"www.catchjobs.com, Türkiye İş Kurumunun 31.12.2021 tarih ve 10447112 numaralı izin belgeleri ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Türkiye İş Kurumu Ankara İl Müdürlüğü: 0(312) 431 02 34 Türkiye iş Kurumu Ankara Çalışma ve İş Kurumu Çankaya Hizmet Merkezi: 0(312) 431 02 33","copyright":"© Copyright CatchJobs. Tüm hakları saklıdır.","social":{"facebook":"Facebook","instagram":"Instagram","linkedin":"LinkedIn"},"languageModal":{"title":"Dil Seçin","close":"Kapat","english":"English","turkish":"Türkçe","save":"Kaydet"}}},"filter":{"clear":"Aramayı temizle","resultsCount":"0 adet sonuç bulundu","noResults":"Aramanıza/filtrelemelerinize uygun sonuç bulunamadı.","reset":"Filtreleri Sıfırla"},"jobs":{"applicantsSuffix":"kişi başvurdu","tags":{"fullTime":"Tam Zamanlı","experience":"Deneyim Gerekli"},"cta":"Tüm İş İlanlarına Gözat"}},"i18nInline":"{\"tr\":{\"header\":{\"brand\":\"Örnek Blog\",\"subtitle\":\"Teknik notlar, tasarım fikirleri ve modern web tüyoları.\",\"actions\":{\"language\":\"Dili değiştir\",\"languageShort\":\"TR\",\"theme\":\"Temayı değiştir\",\"menu\":\"Menüyü aç/kapat\"}},\"hero\":{\"title\":\"Modern geliştiriciler için kısa ve öz içerikler\",\"lede\":\"Türkçe ve İngilizce rehberlerle araç zincirinizi kurun, tasarım sistemleri oluşturun ve TypeScript projelerinizi ölçeklendirin.\",\"primaryCta\":\"Son yazıları oku\",\"secondaryCta\":\"Projeyi GitHub'da görüntüle\"},\"buttons\":{\"readMore\":\"Devamını oku\",\"viewAll\":\"Tümünü gör\",\"backToHome\":\"Ana sayfaya dön\"},\"meta\":{\"publishedOn\":\"Yayın tarihi\",\"updatedOn\":\"Güncellendi\",\"category\":\"Kategori\",\"readingTime\":\"dk okuma\"},\"listing\":{\"relatedTitle\":\"İlgili Yazılar\",\"tagPrefix\":\"Etiket\",\"categoryPrefix\":\"Kategori\",\"current\":\"Bu yazı\",\"empty\":\"Henüz içerik bulunamadı.\"},\"pagination\":{\"previous\":\"Önceki\",\"next\":\"Sonraki\"},\"post\":{\"tagsHeading\":\"Etiketler\"},\"footer\":{\"tagline\":\"Özenle seçilmiş içeriklerle üretken kal.\",\"policies\":{\"cookie\":\"Çerez Politikası\",\"privacy\":\"Gizlilik Politikası\"},\"note\":\"Örnek Blog © 2025\",\"tags\":{\"web\":\"Web Geliştirme\",\"javascript\":\"JavaScript\",\"css\":\"CSS\",\"typescript\":\"TypeScript\"}},\"sections\":{\"featured\":{\"title\":\"Öne Çıkan Yazılar\",\"subtitle\":\"Takımın sıklıkla referans verdiği kılavuzlar.\"},\"latestPosts\":{\"title\":\"Son Yazılar\",\"subtitle\":\"Takip edilen konulardan en taze eklemeler.\",\"empty\":\"Henüz içerik yok. Çok yakında ekleyeceğiz.\"}},\"sharing\":{\"copyLink\":\"Bağlantıyı kopyala\",\"sharePrompt\":\"Bu yazıyı paylaş\",\"copied\":\"Kopyalandı!\"},\"forms\":{\"searchPlaceholder\":\"Yazı veya konu ara...\",\"subscribeCta\":\"Bültene katıl\"},\"layout\":{\"head\":{\"title\":\"CatchJobs - İş Bulmanın En Kolay Yolu\"},\"header\":{\"logoLabel\":\"CatchJobs Ana Sayfa\",\"nav\":{\"home\":\"Anasayfa\",\"jobs\":\"Aktif İlanlar\",\"about\":\"Hakkımızda\",\"help\":\"Yardım\"},\"language\":{\"english\":\"English\",\"turkish\":\"Türkçe\"},\"menu\":{\"open\":\"Menüyü Aç\",\"close\":\"Menüyü Kapat\"},\"employerPortalDesktop\":\"İş Veren Portalı\",\"employerPortalMobile\":\"İşveren Portalı\"},\"footer\":{\"slogan\":\"Kariyerini yazma, CatchJobs ile videoyla yakala!\",\"columns\":{\"jobs\":{\"title\":\"İlanlar\",\"active\":\"Aktif İlanlar\",\"istanbul\":\"İstanbul İlanları\",\"ankara\":\"Ankara İlanları\",\"antalya\":\"Antalya İlanları\"},\"catchjobs\":{\"title\":\"CatchJobs\",\"about\":\"Hakkımızda\",\"press\":\"Basında Biz\",\"careers\":\"Kariyet Fırsatları\",\"hiringBadge\":\"Hiring!\",\"investors\":\"Yatırımcı İlişkileri\",\"terms\":\"Kullanım Şartları ve Yasal\"},\"support\":{\"title\":\"Destek\",\"contact\":\"İletişim\",\"helpCenter\":\"Yardım Merkezi\",\"faq\":\"Sıkça Sorulan Sorular\",\"appDemo\":\"Uygulama Tanıtımı\",\"demoRequest\":\"Demo Talep Edin\"},\"resources\":{\"title\":\"Kaynaklar\",\"blog\":\"Blog\",\"archive\":\"İş İlanları Arşivi\",\"googlePlay\":\"Google Play Profili\",\"appStore\":\"App Store Profili\",\"apiDocs\":\"API Dökümanları\"}},\"badges\":{\"iskurAlt\":\"İşkur Özel İstihdam Bürosu\",\"iyzicoAria\":\"Iyzico ile Öde\"},\"disclaimer\":\"www.catchjobs.com, Türkiye İş Kurumunun 31.12.2021 tarih ve 10447112 numaralı izin belgeleri ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınması yasaktır. Türkiye İş Kurumu Ankara İl Müdürlüğü: 0(312) 431 02 34 Türkiye iş Kurumu Ankara Çalışma ve İş Kurumu Çankaya Hizmet Merkezi: 0(312) 431 02 33\",\"copyright\":\"© Copyright CatchJobs. Tüm hakları saklıdır.\",\"social\":{\"facebook\":\"Facebook\",\"instagram\":\"Instagram\",\"linkedin\":\"LinkedIn\"},\"languageModal\":{\"title\":\"Dil Seçin\",\"close\":\"Kapat\",\"english\":\"English\",\"turkish\":\"Türkçe\",\"save\":\"Kaydet\"}}},\"filter\":{\"clear\":\"Aramayı temizle\",\"resultsCount\":\"0 adet sonuç bulundu\",\"noResults\":\"Aramanıza/filtrelemelerinize uygun sonuç bulunamadı.\",\"reset\":\"Filtreleri Sıfırla\"},\"jobs\":{\"applicantsSuffix\":\"kişi başvurdu\",\"tags\":{\"fullTime\":\"Tam Zamanlı\",\"experience\":\"Deneyim Gerekli\"},\"cta\":\"Tüm İş İlanlarına Gözat\"}},\"en\":{\"header\":{\"brand\":\"Sample Blog\",\"subtitle\":\"Technical notes, design inspiration, and modern web insights.\",\"actions\":{\"language\":\"Switch language\",\"languageShort\":\"EN\",\"theme\":\"Toggle theme\",\"menu\":\"Toggle menu\"}},\"hero\":{\"title\":\"Concise stories for modern builders\",\"lede\":\"Use bilingual guides to shape your toolchain, build design systems, and scale TypeScript projects.\",\"primaryCta\":\"Read the latest posts\",\"secondaryCta\":\"View the project on GitHub\"},\"buttons\":{\"readMore\":\"Read more\",\"viewAll\":\"View all\",\"backToHome\":\"Back to home\"},\"meta\":{\"publishedOn\":\"Published on\",\"updatedOn\":\"Updated\",\"category\":\"Category\",\"readingTime\":\"min read\"},\"listing\":{\"relatedTitle\":\"Related Articles\",\"tagPrefix\":\"Tag\",\"categoryPrefix\":\"Category\",\"current\":\"Current post\",\"empty\":\"Nothing to show yet.\"},\"pagination\":{\"previous\":\"Previous\",\"next\":\"Next\"},\"post\":{\"tagsHeading\":\"Tags\"},\"footer\":{\"tagline\":\"Stay productive with carefully curated content.\",\"policies\":{\"cookie\":\"Cookie Policy\",\"privacy\":\"Privacy Policy\"},\"note\":\"Sample Blog © 2025\",\"tags\":{\"web\":\"Web Development\",\"javascript\":\"JavaScript\",\"css\":\"CSS\",\"typescript\":\"TypeScript\"}},\"sections\":{\"featured\":{\"title\":\"Featured Posts\",\"subtitle\":\"Guides the team references most often.\"},\"latestPosts\":{\"title\":\"Latest Posts\",\"subtitle\":\"Fresh additions from the topics you follow.\",\"empty\":\"No content yet. Fresh posts are coming soon.\"}},\"sharing\":{\"copyLink\":\"Copy link\",\"sharePrompt\":\"Share this article\",\"copied\":\"Copied!\"},\"forms\":{\"searchPlaceholder\":\"Search posts or topics...\",\"subscribeCta\":\"Join the newsletter\"},\"layout\":{\"head\":{\"title\":\"CatchJobs - The Easiest Way to Find a Job\"},\"header\":{\"logoLabel\":\"CatchJobs Home\",\"nav\":{\"home\":\"Home\",\"jobs\":\"Open Roles\",\"about\":\"About Us\",\"help\":\"Help\"},\"language\":{\"english\":\"English\",\"turkish\":\"Turkish\"},\"menu\":{\"open\":\"Open menu\",\"close\":\"Close menu\"},\"employerPortalDesktop\":\"Employer Portal\",\"employerPortalMobile\":\"Employer Portal\"},\"footer\":{\"slogan\":\"Don't write your career; capture it on video with CatchJobs!\",\"columns\":{\"jobs\":{\"title\":\"Jobs\",\"active\":\"Open Roles\",\"istanbul\":\"Istanbul Jobs\",\"ankara\":\"Ankara Jobs\",\"antalya\":\"Antalya Jobs\"},\"catchjobs\":{\"title\":\"CatchJobs\",\"about\":\"About Us\",\"press\":\"In the Press\",\"careers\":\"Career Opportunities\",\"hiringBadge\":\"Hiring!\",\"investors\":\"Investor Relations\",\"terms\":\"Terms of Use \\u0026 Legal\"},\"support\":{\"title\":\"Support\",\"contact\":\"Contact\",\"helpCenter\":\"Help Center\",\"faq\":\"FAQ\",\"appDemo\":\"App Demo\",\"demoRequest\":\"Request a Demo\"},\"resources\":{\"title\":\"Resources\",\"blog\":\"Blog\",\"archive\":\"Job Listings Archive\",\"googlePlay\":\"Google Play Profile\",\"appStore\":\"App Store Profile\",\"apiDocs\":\"API Documentation\"}},\"badges\":{\"iskurAlt\":\"ISKUR Private Employment Agency\",\"iyzicoAria\":\"Pay with Iyzico\"},\"disclaimer\":\"www.catchjobs.com operates with permit documents of the Turkish Employment Agency dated 31.12.2021 and numbered 10447112. Under Law No. 4904, it is prohibited to charge job seekers. Turkish Employment Agency Ankara Provincial Directorate: 0(312) 431 02 34 Turkish Employment Agency Ankara Labor and Employment Agency Cankaya Service Center: 0(312) 431 02 33\",\"copyright\":\"© Copyright CatchJobs. All rights reserved.\",\"social\":{\"facebook\":\"Facebook\",\"instagram\":\"Instagram\",\"linkedin\":\"LinkedIn\"},\"languageModal\":{\"title\":\"Select Language\",\"close\":\"Close\",\"english\":\"English\",\"turkish\":\"Turkish\",\"save\":\"Save\"}}},\"filter\":{\"clear\":\"Clear search\",\"resultsCount\":\"0 results found\",\"noResults\":\"No results matched your search or filters.\",\"reset\":\"Reset Filters\"},\"jobs\":{\"applicantsSuffix\":\"applicants\",\"tags\":{\"fullTime\":\"Full Time\",\"experience\":\"Experience Required\"},\"cta\":\"Browse All Job Listings\"}}}","page":{"title":"Is Ilanlari","description":"","robots":"index,follow","canonical":"http://localhost:3000/jobs/","alternates":{"base":{"tr":"http://localhost:3000/","en":"http://localhost:3000/en/"},"tr":"http://localhost:3000/jobs/","en":"http://localhost:3000/en/","default":"http://localhost:3000/jobs/"},"alternateLinks":[{"lang":"tr","hreflang":"tr","url":"http://localhost:3000/jobs/","label":"Türkçe","baseUrl":"http://localhost:3000/"},{"lang":"en","hreflang":"en","url":"http://localhost:3000/en/","label":"English","baseUrl":"http://localhost:3000/en/"}],"og":{"title":"Is Ilanlari","description":"","type":"website","url":"http://localhost:3000/jobs/","image":"https://images.unsplash.com/photo-1518770660439-4636190af475/?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","locale":"tr_TR","altLocale":["en_US"]},"twitter":{"card":"summary_large_image","title":"Is Ilanlari","description":"","image":"https://images.unsplash.com/photo-1518770660439-4636190af475/?auto=format\u0026fit=crop\u0026w=1600\u0026q=80","url":"http://localhost:3000/jobs/"},"structuredData":"{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"headline\":\"Is Ilanlari\",\"description\":\"\",\"publisher\":{\"@type\":\"Person\",\"name\":\"CatchJobs\",\"url\":\"http://localhost:3000/\"},\"inLanguage\":\"tr\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"http://localhost:3000/jobs/\"}}"},"content":"\u003cdiv class=\"page\"\u003e\n    \u003cp\u003eHazirlaniyor.\u003c/p\u003e\n\n\u003c/div\u003e\n","scripts":{"analytics":[],"body":[]}};
+    </script>
+</body>
+
+</html>

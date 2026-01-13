@@ -2,39 +2,115 @@
 <?xml-stylesheet type="text/xsl" href="/assets/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/</loc>
+    <loc>http://localhost:3000/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/404/</loc>
+    <loc>http://localhost:3000/404/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/about/</loc>
+    <loc>http://localhost:3000/about/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/buttons/</loc>
+    <loc>http://localhost:3000/contact/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/demo-request/</loc>
+    <loc>http://localhost:3000/demo-request/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/faq/</loc>
+    <loc>http://localhost:3000/en/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/help/</loc>
+    <loc>http://localhost:3000/en/404/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/press/</loc>
+    <loc>http://localhost:3000/en/about/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
   <url>
-    <loc>https://catchjobs.github.io/catch-new-landing/terms/</loc>
+    <loc>http://localhost:3000/en/contact/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/demo-request/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/faq/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/help/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/jobs/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/jobs/ankara/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/jobs/antalya/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/jobs/archive/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/jobs/istanbul/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/press/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/en/terms/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/faq/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/help/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jobs/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jobs/ankara/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jobs/antalya/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jobs/archive/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/jobs/istanbul/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/press/</loc>
+    <lastmod>2025-01-01</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:3000/terms/</loc>
     <lastmod>2025-01-01</lastmod>
   </url>
 </urlset>

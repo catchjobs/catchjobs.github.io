@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icon-hospitality" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M8.5 14C9.88071 14 11 12.8807 11 11.5C11 10.1193 9.88071 9 8.5 9C7.11929 9 6 10.1193 6 11.5C6 12.8807 7.11929 14 8.5 14Z" stroke="#FF5442" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M3 22V19C3 17.9391 3.42143 16.9217 4.17157 16.1716C4.92172 15.4214 5.93913 15 7 15H10C11.0609 15 12.0783 15.4214 12.8284 16.1716C13.5786 16.9217 14 17.9391 14 19V22" stroke="#FF5442" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M16 3H21M16 8H21M16 13H18" stroke="#FF5442" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="flag-uae" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+<g clip-path="url(#clip-flag-uae)">
+                <path d="M0.769043 5.64138H19.2306V0.769287H0.769043V5.64138Z" fill="#0052B4" />
+                <path d="M0.769043 19.2309H19.2306V14.3588H0.769043V19.2309Z" fill="#6DA544" />
+                <path d="M0.769043 14.3588H19.2306V5.64142H0.769043V14.3588Z" fill="#F0F0F0" />
+                <path d="M0.769043 19.2309H6.4104V0.769287H0.769043V19.2309Z" fill="#D80027" />
+            </g>
+            <defs>
+                <clipPath id="clip-flag-uae">
+                    <rect width="20" height="20" fill="white" />
+                </clipPath>
+            </defs>
+</svg>
