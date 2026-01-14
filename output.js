@@ -217,15 +217,19 @@ var initLanguageSwitcher = () => {
     refreshLanguageOptions();
   };
   const loadSiteLanguages = async () => {
-    var _a, _b;
-    try {
-      const response = await fetch("/site.json", { cache: "no-store" });
-      if (!response.ok) return null;
-      const data = await response.json();
-      return (_b = (_a = data == null ? void 0 : data.content) == null ? void 0 : _a.languages) != null ? _b : null;
-    } catch (e) {
-      return null;
-    }
+    const links = Array.from(document.querySelectorAll('link[rel="alternate"][data-lang]'));
+    if (links.length === 0) return null;
+    const supported = Array.from(
+      new Set(
+        links.map((link) => link.getAttribute("data-lang")).filter(Boolean)
+      )
+    );
+    if (supported.length === 0) return null;
+    const htmlLang = document.documentElement.getAttribute("lang");
+    return {
+      supported,
+      default: supported.includes(htmlLang) ? htmlLang : supported[0]
+    };
   };
   let supportedLanguages = null;
   loadSiteLanguages().then((languages) => {
