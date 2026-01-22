@@ -1808,7 +1808,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: calc(var(--spacing) * 2);
-    border-radius: 20px;
+    border-radius: var(--radius-2xl);
     border-style: var(--tw-border-style);
     border-width: 1px;
     border-color: #E5E6F0;
@@ -1824,6 +1824,7 @@
     transition: background 0.2s ease;
   }
   .accordion-item-active {
+    border-radius: var(--radius-2xl);
     background-color: #F8FAFA;
   }
   .accordion-trigger {
@@ -4369,6 +4370,11 @@
     .help-page {
       padding-top: calc(var(--spacing) * 8);
     }
+  }
+}
+@layer components {
+  .page-contact h1 {
+    text-align: center;
   }
 }
 @layer components {

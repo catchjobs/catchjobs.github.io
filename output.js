@@ -1,5 +1,14 @@
 // src/js/app.js
 var LANGUAGE_STORAGE_KEY = "catch-lang";
+var LANGUAGE_SWITCHER_DISABLED = (() => {
+  if (typeof window === "undefined") return false;
+  const value = window.CATCH_DISABLE_LANGUAGE_SWITCHER;
+  if (value === void 0 || value === null) return false;
+  if (typeof value === "string") {
+    return value.toLowerCase() === "true" || value === "1";
+  }
+  return Boolean(value);
+})();
 var isExpanded = (element) => (element == null ? void 0 : element.getAttribute("aria-expanded")) === "true";
 var setExpanded = (element, value) => {
   if (element) {
@@ -76,8 +85,17 @@ var initLanguageSwitcher = () => {
   const languageModalClose = document.getElementById("languageModalClose");
   const languageSaveButton = document.getElementById("languageSaveButton");
   const mobileLanguageDropdown = document.querySelector(".mobile-language-dropdown");
+  const languageDropdownWrapper = document.querySelector(".language-dropdown-wrapper");
   let desktopLangOptions = Array.from(document.querySelectorAll(".desktop-lang-option"));
   let languageOptions = Array.from(document.querySelectorAll(".language-option"));
+  if (LANGUAGE_SWITCHER_DISABLED) {
+    [languageDropdownWrapper, mobileLanguageDropdown, languageModalOverlay].forEach((element) => {
+      if (!element) return;
+      element.hidden = true;
+      element.setAttribute("aria-hidden", "true");
+    });
+    return;
+  }
   const getCookie = (name) => {
     if (typeof document === "undefined") return null;
     const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
