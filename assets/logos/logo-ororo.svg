@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 80 32">
+  <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+  <defs>
+    <style>
+      .st0 {
+        mask: url(#mask);
+      }
+
+      .st1 {
+        fill: #83889e;
+      }
+
+      .st1, .st2 {
+        fill-rule: evenodd;
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+
+      .st3 {
+        mask: url(#mask-3);
+      }
+
+      .st4 {
+        mask: url(#mask-4);
+      }
+
+      .st5 {
+        mask: url(#mask-5);
+      }
+
+      .st6 {
+        mask: url(#mask-7);
+      }
+
+      .st7 {
+        mask: url(#mask-6);
+      }
+
+      .st8 {
+        mask: url(#mask-1);
+      }
+
+      .st9 {
+        mask: url(#mask-9);
+      }
+
+      .st10 {
+        mask: url(#mask-8);
+      }
+
+      .st11 {
+        mask: url(#mask-10);
+      }
+
+      .st12 {
+        mask: url(#mask-14);
+      }
+
+      .st13 {
+        mask: url(#mask-11);
+      }
+
+      .st14 {
+        mask: url(#mask-13);
+      }
+
+      .st15 {
+        mask: url(#mask-12);
+      }
+
+      .st16 {
+        mask: url(#mask-22);
+      }
+    </style>
+    <mask id="mask" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-2">
+        <polygon id="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-1" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-21" data-name="mask-2">
+        <polygon id="path-11" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-22" data-name="mask-2" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-23" data-name="mask-2">
+        <polygon id="path-12" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-3" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-24" data-name="mask-2">
+        <polygon id="path-13" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-4" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-25" data-name="mask-2">
+        <polygon id="path-14" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-5" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-26" data-name="mask-2">
+        <polygon id="path-15" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-6" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-27" data-name="mask-2">
+        <polygon id="path-16" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-7" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-28" data-name="mask-2">
+        <polygon id="path-17" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-8" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-29" data-name="mask-2">
+        <polygon id="path-18" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-9" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-210" data-name="mask-2">
+        <polygon id="path-19" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-10" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-211" data-name="mask-2">
+        <polygon id="path-110" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-11" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-212" data-name="mask-2">
+        <polygon id="path-111" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-12" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-213" data-name="mask-2">
+        <polygon id="path-112" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-13" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-214" data-name="mask-2">
+        <polygon id="path-113" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+    <mask id="mask-14" x="2.6" y="1.1" width="74.8" height="29.8" maskUnits="userSpaceOnUse">
+      <g id="mask-215" data-name="mask-2">
+        <polygon id="path-114" data-name="path-1" class="st2" points="2.6 30.9 77.4 30.9 77.4 1.1 2.6 1.1 2.6 30.9"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="Desktop-HD">
+    <g id="Logo">
+      <path id="Fill-1" class="st1" d="M31.5,10.4c0,1.6-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8,1.3-2.8,2.8-2.8,2.8,1.3,2.8,2.8"/>
+      <g class="st0">
+        <polygon id="Fill-3" class="st1" points="20.3 22.4 25.1 22.4 25.1 8 20.3 8 20.3 22.4"/>
+      </g>
+      <g class="st8">
+        <polygon id="Fill-5" class="st1" points="35.6 5.1 44.4 5.1 44.4 1.1 35.6 1.1 35.6 5.1"/>
+      </g>
+      <g class="st16">
+        <path id="Fill-6" class="st1" d="M10.2,18c-1.6,0-2.8-1.3-2.8-2.8s1.3-2.8,2.8-2.8,2.8,1.3,2.8,2.8-1.3,2.8-2.8,2.8M10.2,7.6c-4.2,0-7.6,3.4-7.6,7.6s3.4,7.6,7.6,7.6,7.6-3.4,7.6-7.6-3.4-7.6-7.6-7.6"/>
+      </g>
+      <g class="st3">
+        <path id="Fill-7" class="st1" d="M61.3,10.4c0,1.6-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8,1.3-2.8,2.8-2.8,2.8,1.3,2.8,2.8"/>
+      </g>
+      <g class="st4">
+        <polygon id="Fill-8" class="st1" points="50 22.4 54.9 22.4 54.9 8 50 8 50 22.4"/>
+      </g>
+      <g class="st5">
+        <path id="Fill-9" class="st1" d="M40,18c-1.6,0-2.8-1.3-2.8-2.8s1.3-2.8,2.8-2.8,2.8,1.3,2.8,2.8-1.3,2.8-2.8,2.8M40,7.6c-4.2,0-7.6,3.4-7.6,7.6s3.4,7.6,7.6,7.6,7.6-3.4,7.6-7.6-3.4-7.6-7.6-7.6"/>
+      </g>
+      <g class="st7">
+        <path id="Fill-10" class="st1" d="M69.7,18c-1.6,0-2.8-1.3-2.8-2.8s1.3-2.8,2.8-2.8,2.8,1.3,2.8,2.8-1.3,2.8-2.8,2.8M69.7,7.6c-4.2,0-7.6,3.4-7.6,7.6s3.4,7.6,7.6,7.6,7.6-3.4,7.6-7.6-3.4-7.6-7.6-7.6"/>
+      </g>
+      <g class="st6">
+        <path id="Fill-11" class="st1" d="M11.7,27.1c.2.1.4.3.5.5l-.5.4c-.2-.3-.4-.4-.7-.4s-.3,0-.3,0c0,0-.1.2-.1.3s0,.2.1.2c0,0,.2.1.3.2l.4.2c.3.1.6.3.7.5.2.2.2.4.2.7s-.1.6-.4.8c-.3.2-.6.3-1,.3s-.6,0-.9-.2c-.3-.2-.5-.4-.6-.6l.5-.4c.3.4.6.6,1,.6s.3,0,.4-.1c0,0,.1-.2.1-.3s0-.1,0-.2c0,0,0-.1-.2-.1,0,0-.1,0-.3-.1l-.4-.2c-.3-.1-.5-.3-.7-.5-.2-.2-.2-.4-.2-.6s.1-.6.4-.8c.2-.2.6-.3.9-.3s.6,0,.8.2"/>
+      </g>
+      <g class="st10">
+        <path id="Fill-12" class="st1" d="M20.2,29.2c0,.5-.2.9-.5,1.2-.3.3-.7.5-1.2.5s-.9-.2-1.2-.5c-.3-.3-.5-.7-.5-1.2v-2.3h.8v2.3c0,.3,0,.5.2.7.2.2.4.2.6.2s.5,0,.6-.2c.2-.2.2-.4.2-.7v-2.3h.8v2.3Z"/>
+      </g>
+      <g class="st9">
+        <path id="Fill-13" class="st1" d="M27,27.1c.2.1.4.3.5.5l-.5.4c-.2-.3-.4-.4-.7-.4s-.3,0-.3,0c0,0-.1.2-.1.3s0,.2.1.2c0,0,.2.1.3.2l.4.2c.3.1.6.3.7.5.2.2.2.4.2.7s-.1.6-.4.8c-.3.2-.6.3-1,.3s-.6,0-.9-.2c-.3-.2-.5-.4-.6-.6l.5-.4c.3.4.6.6,1,.6s.3,0,.4-.1c0,0,.1-.2.1-.3s0-.1,0-.2c0,0,0-.1-.2-.1,0,0-.1,0-.3-.1l-.4-.2c-.3-.1-.5-.3-.7-.5-.2-.2-.2-.4-.2-.6s.1-.6.4-.8.6-.3.9-.3.6,0,.8.2"/>
+      </g>
+      <g class="st11">
+        <polygon id="Fill-14" class="st1" points="35.6 30.8 34.8 30.8 34.8 29.1 33.1 29.1 33.1 30.8 32.3 30.8 32.3 26.9 33.1 26.9 33.1 28.4 34.8 28.4 34.8 26.9 35.6 26.9 35.6 30.8"/>
+      </g>
+      <g class="st13">
+        <polygon id="Fill-15" class="st1" points="40.5 30.8 41.3 30.8 41.3 26.9 40.5 26.9 40.5 30.8"/>
+      </g>
+      <g class="st15">
+        <path id="Fill-16" class="st1" d="M53.9,30c0,0,.1-.2.1-.4s0-.3-.1-.4c0,0-.2-.1-.4-.1h-.9v1h.9c.2,0,.3,0,.4-.1ZM52.6,27.6v.9h.5c.2,0,.3,0,.4-.1,0,0,.1-.2.1-.3s0-.2-.1-.3c0,0-.2-.1-.4-.1h-.5ZM54.6,29.1c.1.2.2.4.2.6,0,.3-.1.6-.4.8-.2.2-.5.3-.9.3h-1.7v-3.9h1.4c.4,0,.7.1.9.3.2.2.3.5.3.8s0,.5-.3.7c.2,0,.4.2.5.4Z"/>
+      </g>
+      <g class="st14">
+        <path id="Fill-17" class="st1" d="M60.9,28.3l-.5,1.3h1l-.5-1.3ZM61.7,30.3h-1.6l-.2.5h-.9l1.7-3.9h.3l1.7,3.9h-.9l-.2-.5Z"/>
+      </g>
+      <g class="st12">
+        <path id="Fill-18" class="st1" d="M68.1,28.7h.7c.2,0,.3,0,.4-.2.1-.1.2-.2.2-.4s0-.3-.2-.4c-.1-.1-.2-.2-.4-.2h-.7v1.1ZM69.7,30.8l-1-1.4h-.6v1.4h-.8v-3.9h1.5c.4,0,.7.1,1,.3.3.2.4.5.4.9s0,.5-.2.7c-.1.2-.3.3-.5.4l1.1,1.5h-.9Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
